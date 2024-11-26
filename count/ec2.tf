@@ -1,4 +1,5 @@
 resource "aws_instance" "backend" {
+    # count = 3
     count = length(var.instance_names)
     ami = "ami-09c813fb71547fc4f"
     instance_type = "t3.micro"
