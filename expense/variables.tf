@@ -11,3 +11,11 @@ variable "common_tags" {
         Terraform = "true"
     }
 }
+
+variable "zone_id" {
+    default = "Z0144646135M9PQT22WCJ"
+}
+
+variable "domain_name" {
+    default = "kamineni.site"
+}
