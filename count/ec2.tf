@@ -1,5 +1,5 @@
 resource "aws_instance" "backend" {
-    # count = 3
+    # count = 3    #it only create 3 inst, if we have more in list it wont create
     count = length(var.instance_names)
     ami = "ami-09c813fb71547fc4f"
     instance_type = "t3.micro"
